@@ -1,0 +1,29 @@
+.nf-x1 img {
+    max-width: 100%;
+}
+
+.cf-c2 {
+    font-family: nunito, sans-serif;
+}
+
+.bk-grey {
+    background-color: #f8fafb;
+}
+
+.bk-white {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.sb-text {
+    padding-left: 15px;
+    font-family: nunito, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.ul-news li a {
+    font-size: 14px;
+    font-family: nunito, sans-serif;
+    color: #7b8088;
+}

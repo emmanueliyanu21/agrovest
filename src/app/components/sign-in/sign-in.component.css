@@ -1,0 +1,49 @@
+.sign-pz form {
+    max-width: 60%;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgb(223, 223, 223);
+    border-radius: 8px;
+    padding: 30px;
+    margin: auto;
+    border-top: 10px solid rgb(0, 158, 34);
+}
+
+.sign-pz {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.fp h2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: Nunito, sans-serif;
+    color: red;
+}
+
+.fp {
+    padding-top: 40px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.bk-grey {
+    background-color: #f8fafb;
+}
+
+.fp-sign a {
+    font-size: 12px;
+}
+
+.fp-sign a:hover {
+    cursor: pointer;
+    color: rgb(0, 158, 34);
+}
+
+.agric-pz img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.agric-pz {
+    padding-top: 40px;
+}

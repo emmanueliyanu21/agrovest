@@ -1,0 +1,91 @@
+.dash-x1 h2 {
+    font-size: 16px;
+    font-family: Nunito, sans-serif;
+    color: #7b8088;
+}
+
+.dash-x1 {
+    padding-right: 40px!important;
+    border-right: 1px solid #ebedee;
+}
+
+.ul-dahsboard li {
+    /* padding-bottom: 30px; */
+    font-size: 16px;
+    list-style: none;
+    font-family: Nunito, sans-serif;
+}
+
+.ul-dahsboard {
+    padding-left: 40px!important;
+    margin-top: 30px;
+}
+
+.ul-dahsboard img {
+    max-width: 11%;
+    padding-right: 6px;
+    margin-top: -2px;
+}
+
+.ul-dahsboard a li {
+    text-decoration: none;
+    color: #343a3f;
+    padding: 12px 2px 15px 15px;
+    border-radius: 8px;
+}
+
+.ul-dahsboard a {
+    text-decoration: none;
+}
+
+.pro-x1 {
+    padding-left: 40px;
+}
+
+.pro-x1 h2 {
+    padding-bottom: 20px;
+    font-family: nunito, sans-serif;
+    font-size: 22px;
+    padding-top: 30px;
+    color: rgb(0, 158, 34);
+}
+
+.form-group {
+    margin-bottom: 5px!important;
+}
+
+.pro-x1 h4 {
+    padding-bottom: 20px;
+    font-family: nunito, sans-serif;
+    font-size: 16px;
+}
+
+.profile-body {
+    border: 1px solid #e3e5e9;
+    border-radius: 8px;
+    padding: 15px 30px 15px 30px;
+    max-width: 80%;
+}
+
+.form-group {
+    border-bottom: 1px solid #f8fafb;
+    padding-bottom: 5px;
+}
+
+.ul-dahsboard a li:hover {
+    background-color: #f8fafb;
+}
+
+.ul-dahsboard {
+    padding-top: 10px;
+}
+
+.ul-not li {
+    background-color: #f8fafb;
+    color: #343a3f;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    margin-bottom: 5px;
+    font-family: nunito, sans-serif;
+}

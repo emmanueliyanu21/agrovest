@@ -1,0 +1,93 @@
+<section class="bk-grey">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-9 mhze-in">
+                <form (ngSubmit)="onSubmit(f)" action="src/app/components/sign-in" novalidate #f="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Full Name</label>
+                                <input type="name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Full Name" [(ngModel)]="user.firstname" name="firstname" required minlength="2" #userfirstName="ngModel">
+                                <div *ngIf="userfirstName.errors?.required && userfirstName.touched" class="alert alert-danger">Full Name is required</div>
+                                <div *ngIf="userfirstName.errors?.minlength && userfirstName.touched" class="alert alert-danger">Full Name should be at least 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email Address</label>
+                                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Email Address" [(ngModel)]="user.email" name="email" required minlength="2" #userEmail="ngModel">
+                                <div *ngIf="userEmail.errors?.required && userEmail.touched" class="alert alert-danger">Email Address is required</div>
+                                <div *ngIf="userEmail.errors?.minlength && userfirstName.touched" class="alert alert-danger">Email should be at least 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Gender</label>
+                                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Gender" [(ngModel)]="user.gender" name="gender" required minlength="2" #userGender="ngModel">
+                                <div *ngIf="userGender.errors?.required && userGender.touched" class="alert alert-danger">Gender is required</div>
+                                <div *ngIf="userGender.errors?.minlength && userGender.touched" class="alert alert-danger">Gender should be at least 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Location</label>
+                                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Location" [(ngModel)]="user.location" name="location" required minlength="2" #userLocation="ngModel">
+                                <div *ngIf="userLocation.errors?.required && userLocation.touched" class="alert alert-danger">Location is required</div>
+                                <div *ngIf="userLocation.errors?.minlength && userLocation.touched" class="alert alert-danger">Location should be at least 2 characters</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Full Address</label>
+                                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Full Address" [(ngModel)]="user.fulladdress" name="fulladdress" required minlength="2" #userFullAddress="ngModel">
+                                <div *ngIf="userFullAddress.errors?.required && userFullAddress.touched" class="alert alert-danger">Full Address is required</div>
+                                <div *ngIf="userFullAddress.errors?.minlength && userFullAddress.touched" class="alert alert-danger">Full Address should be at least 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Password</label>
+                                <input type="password" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Password" [(ngModel)]="user.password" name="password" required minlength="2" #userPassword="ngModel">
+                                <div *ngIf="userPassword.errors?.required && userPassword.touched" class="alert alert-danger">Password is required</div>
+                                <div *ngIf="userPassword.errors?.minlength && userPassword.touched" class="alert alert-danger">Password should be at least 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone</label>
+                                <input type="name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="phone number" [(ngModel)]="user.phonenumber" name="phonenumber" required minlength="11" #userphoneNumber="ngModel">
+                                <div *ngIf="userphoneNumber.errors?.required && userphoneNumber.touched" class="alert alert-danger">Enter a Phone number</div>
+                                <div *ngIf="userphoneNumber.errors?.minlength && userphoneNumber.touched" class="alert alert-danger">Enter a valid Phone Number</div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Sype ID</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skype ID">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember password</label>
+                            </div>
+
+                        </div>
+                        <div class="btn-inner text-center">
+                            <button type="submit" class="btn btn-primary btn-submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-md-3">
+                <div class="fg-pz">
+                    <img src="assets/img/logo.png" alt="">
+
+                    <ul class="ul-text">
+                        <li>Lorem ipsum dolor sit amet consectetur </li>
+                    </ul>
+                    <ul class="ul-text">
+                        <li>Lorem ipsum dolor sit amet consectetur </li>
+                    </ul>
+                    <ul class="ul-text">
+                        <li>Lorem ipsum dolor sit amet consectetur </li>
+                    </ul>
+                    <ul class="ul-text">
+                        <li>Lorem ipsum dolor sit amet consectetur </li>
+                    </ul>
+                    <ul class="ul-text">
+                        <li>Lorem ipsum dolor sit amet consectetur </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

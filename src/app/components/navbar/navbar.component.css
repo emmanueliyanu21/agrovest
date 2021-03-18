@@ -1,0 +1,148 @@
+/* first info starts here */
+
+.bk-image {
+    background: url("/img/profile1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk1-main img {
+    max-width: 20%;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    background-color: rgb(218, 240, 223);
+    padding: 12px;
+    border-radius: 25px 25px 4px 25px;
+    margin-bottom: 5px;
+}
+
+.bk1-main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.bk1-main h2 {
+    font-size: #343a3f;
+    font-size: 14px;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.bk1-main p {
+    font-size: #343a3f;
+    font-size: 14px;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.bk-image h2 {
+    color: #fff;
+    font-weight: 650;
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+}
+
+.bk-image p {
+    font-size: 18px;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+.main-bk {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.inner-detail {
+    background-color: #686868;
+    border-radius: 8px;
+    max-width: 40%;
+    padding: 30px;
+    /* opacity: 0.5; */
+}
+
+.btn-main {
+    background-color: #fff;
+    color: 000;
+    font-size: 14px;
+    font-family: Nunito, sans-serif;
+}
+
+.dig-az {
+    background-color: rgb(0, 158, 34);
+    color: #fff;
+}
+
+.dig-pz h2 {
+    font-size: 14px;
+    font-family: Nunito, sans-serif;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+/* first infro ends here */
+
+.navbar-brand img {
+    max-width: 30%;
+}
+
+.navbar-nav li {
+    margin-right: 30px;
+}
+
+.navbar {
+    border-bottom: 1px solid #f8fafb;
+}
+
+.navbar-nav li a {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    color: black!important;
+}
+
+.bk-white {
+    background-color: #fff!important;
+}
+
+.ul-menu li {
+    list-style: none!important;
+    display: inline!important;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    font-family: Nunito, sans-serif;
+    font-weight: normal;
+    margin-right: 30px;
+}
+
+.ul-menu {
+    padding-top: 12px;
+    text-align: right!important;
+}
+
+.ul-menu .fa {
+    padding-right: 5px;
+}
+
+.navbar-nav li a {
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+    color: #1D9AF2;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+    background-color: #f8fafb;
+    border-radius: 8px;
+    transform: scale(1.1);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}

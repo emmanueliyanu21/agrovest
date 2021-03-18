@@ -1,0 +1,70 @@
+.mhze-in form {
+    margin: auto;
+}
+
+.mhze-in form label {
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    color: #343a3f;
+}
+
+.mhze-in form input {
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    color: #343a3f;
+}
+
+.mhze-in {
+    max-width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px rgb(223, 223, 223);
+    margin: auto;
+    border-top: 5px solid rgb(0, 158, 34);
+}
+
+.bk-grey {
+    background-color: #f8fafb;
+}
+
+.btn-submit {
+    background-color: rgb(0, 158, 34);
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.btn-inner button {
+    text-align: center!important;
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
+}
+
+.fg-pz {
+    border: 8px;
+}
+
+.fg-pz img {
+    max-width: 60%;
+    padding-bottom: 30px;
+    text-align: center!important;
+}
+
+.ul-text li {
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.ul-text {
+    background-color: rgb(0, 158, 34);
+    border-radius: 2px;
+}

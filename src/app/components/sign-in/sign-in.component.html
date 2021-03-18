@@ -1,0 +1,38 @@
+<section class="bk-grey">
+    <div class="container">
+        <div class="row pt-5 pb-4">
+            <div class="col-md-6 agric-pz">
+                <img src="assets/img/profile2.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-6 sign-pz">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Email Address" [(ngModel)]="user.email" name="email" required minlength="2" #userEmail="ngModel">
+                        <div *ngIf="userEmail.errors?.required && userEmail.touched" class="alert alert-danger">Email Address is required</div>
+                        <div *ngIf="userEmail.errors?.minlength && userfirstName.touched" class="alert alert-danger">Email should be at least 2 characters</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Password" [(ngModel)]="user.password" name="password" required minlength="2" #userPassword="ngModel">
+                        <div *ngIf="userPassword.errors?.required && userPassword.touched" class="alert alert-danger">Password is required</div>
+                        <div *ngIf="userPassword.errors?.minlength && userPassword.touched" class="alert alert-danger">Password should be at least 2 characters</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div class="row fp">
+                    <div class="col-md-6 fp-sign pull-left">
+                        <a>Forgot password</a>
+                    </div>
+                    <div class="col-md-6 fp-sign pull-right">
+                        <a>Don't have an account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

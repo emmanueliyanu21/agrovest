@@ -1,0 +1,78 @@
+.bk-white {
+    background-color: #f8fafb;
+}
+
+.bk-cart {
+    border-top: 1px solid #e6e9eb;
+    border-bottom: 1px solid #e6e9eb;
+}
+
+.bk-cart:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.bk-cart img {
+    max-width: 50%;
+}
+
+.vc-x1 li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.vc-x2 li {
+    list-style: none;
+}
+
+.vc-x2 .m1 {
+    color: #7b8088!important;
+    font-family: Nunito, sans-serif;
+    padding-bottom: 3px;
+}
+
+.vc-x2 .m2 {
+    color: #343a3f!important;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+}
+
+.vc-x3 select {
+    max-width: 40%!important;
+    background-color: transparent!important;
+    border: transparent;
+    border-bottom: 1px solid #c6c7c9!important;
+    margin: auto;
+}
+
+.vc-x3 select:focus {
+    outline: none!important;
+    border-color: none;
+}
+
+.top-text {
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+}
+
+.vc-x4 .pay {
+    background-color: rgb(0, 158, 34);
+    color: #fff;
+    border: none;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+}
+
+.vc-x4 .cont-shop {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 3px 12px -2px rgb(209, 209, 209);
+    color: #343a3f;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+}
+
+.vc-x4 .cont-shop:hover {
+    background-color: rgb(0, 158, 34);
+    color: #fff;
+}
