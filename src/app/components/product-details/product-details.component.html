@@ -1,69 +1,96 @@
 <section>
-    <div class="container">
-        <div class="row mb-5 mt-5">
-            <div class="col-md-6 prod-img">
-                <img src="assets/img/products/2.jpg" class="img-responsive img-thumbnail" alt="">
-            </div>
-            <div class="col-md-6 prod-x1">
-                <div class="fx-prod">
-                    <h2> <span>Fresh Banana</span>
-                        <a href="" class="pl-5">
-                            <i class="fa fa-heart"></i>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-share-alt"></i>
-                        </a>
-                    </h2>
-                </div>
-                <ul class="ul-star">
-                    <li> <i class="fa fa-star"></i> </li>
-                    <li> <i class="fa fa-star"></i> </li>
-                    <li> <i class="fa fa-star"></i> </li>
-                    <li> <i class="fa fa-star"></i> </li>
-                    <li> <i class="fa fa-star green-x1"></i> </li>
-                </ul>
-                <ul class="ul-text">
-                    <li>
-                        <div class="pd-x1">
-                            <h2>&#8358;50,000</h2>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p class="inner-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </a>
-                    </li>
-                    <li class="pb-3">
-                        <a href="" class="text-x1 pb-5">More...</a>
-                    </li>
-                    <li>
-                        <a href="" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-cart-x1">Add to Cart</a>
-                        <a href="/payment" class="btn btn-primary btn-cart">Order Now</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Modal box starts here -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Added to cart</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                        </div>
-                        <div class="modal-body">
-                            Fresh Banana
-                        </div>
-                        <div class="modal-footer">
-                            <a href="/viewcart" type="button" class="btn btn-secondary">View Cart and checkout</a>
-                            <a href="/market-place" type="button" class="btn btn-primary">Continue Shopping</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal box ends here -->
+  <div class="container">
+    <div class="row mb-5 mt-5">
+      <div class="col-md-6 prod-img">
+        <img
+          src="{{ product.img }}"
+          class="img-responsive img-thumbnail"
+          alt=""
+        />
+      </div>
+      <div class="col-md-6 prod-x1">
+        <div class="fx-prod">
+          <h2>
+            <span>{{ product.name }}</span>
+            <a href="" class="pl-5">
+              <i class="fa fa-heart"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-share-alt"></i>
+            </a>
+          </h2>
         </div>
+        <ul class="ul-star">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star green-x1"></i></li>
+        </ul>
+        <ul class="ul-text">
+          <li>
+            <div class="pd-x1">
+              <h2>&#8358;50,000</h2>
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <p class="inner-txt">
+                {{ product.description }}
+              </p>
+            </a>
+          </li>
+          <li class="pb-3">
+            <a href="" class="text-x1 pb-5">More...</a>
+          </li>
+          <li>
+            <a
+              href=""
+              data-toggle="modal"
+              data-target="#exampleModal"
+              class="btn btn-primary btn-cart-x1"
+              >Add to Cart</a
+            >
+            <a href="/payment" class="btn btn-primary btn-cart">Order Now</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Modal box starts here -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Added to cart</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Fresh Banana</div>
+            <div class="modal-footer">
+              <a href="/viewcart" type="button" class="btn btn-secondary"
+                >View Cart and checkout</a
+              >
+              <a href="/market-place" type="button" class="btn btn-primary"
+                >Continue Shopping</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal box ends here -->
     </div>
+  </div>
 </section>

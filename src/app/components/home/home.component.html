@@ -1,459 +1,476 @@
 <!-- landing page starts here -->
 <section class="bk-image">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 main-bk">
-                <div class="inner-detail">
-                    <h2>A digital platform for agro-commodities trading</h2>
-                    <p>Join the Revolution and help us achieve our goal of Global Food Security.</p>
-                    <div class="main-btn">
-                        <a href="/sign-in" class="btn btn-main">Start Free Trial</a>
-                        <a href="/sign-up" class="btn btn-pz">Sign-up</a>
-                    </div>
-                </div>
-
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 main-bk">
+        <div class="inner-detail">
+          <h2>A digital platform for agro-commodities trading</h2>
+          <p>
+            Join the Revolution and help us achieve our goal of Global Food
+            Security.
+          </p>
+          <div class="main-btn">
+            <a href="/sign-in" class="btn btn-main">Start Free Trial</a>
+            <a href="/sign-up" class="btn btn-pz">Sign-up</a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- landing page ends here -->
 <!-- bk1 section starts here -->
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 bk1-main text-center">
-                <div class="bk1-inner text-center">
-                    <img src="assets/img/agronomy.png" class="img-responsive" alt="">
-                    <p>Fast & Reliable</p>
-                </div>
-            </div>
-            <div class="col-md-3 bk1-main text-center">
-                <div class="bk1-inner">
-                    <img src="assets/img/agronomy.png" class="img-responsive" alt="">
-                    <p>Smart Process</p>
-                </div>
-            </div>
-            <div class="col-md-3 bk1-main text-center">
-                <div class="bk1-inner">
-                    <img src="assets/img/agronomy.png" class="img-responsive" alt="">
-                    <p>Expertise Staff</p>
-                </div>
-            </div>
-            <div class="col-md-3 bk1-main text-center">
-                <div class="bk1-inner">
-                    <img src="assets/img/agronomy.png" class="img-responsive" alt="">
-                    <p>Payment Process</p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 bk1-main text-center">
+        <div class="bk1-inner text-center">
+          <img src="assets/img/agronomy.png" class="img-responsive" alt="" />
+          <p>Fast & Reliable</p>
         </div>
+      </div>
+      <div class="col-md-3 bk1-main text-center">
+        <div class="bk1-inner">
+          <img src="assets/img/agronomy.png" class="img-responsive" alt="" />
+          <p>Smart Process</p>
+        </div>
+      </div>
+      <div class="col-md-3 bk1-main text-center">
+        <div class="bk1-inner">
+          <img src="assets/img/agronomy.png" class="img-responsive" alt="" />
+          <p>Expertise Staff</p>
+        </div>
+      </div>
+      <div class="col-md-3 bk1-main text-center">
+        <div class="bk1-inner">
+          <img src="assets/img/agronomy.png" class="img-responsive" alt="" />
+          <p>Payment Process</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- bk2 section ends here -->
 <!-- organic product starts here -->
 <section class="bg-grey">
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col-md-4 inner-text">
-                <a href="" class="btn btn-org">vegetables</a>
-                <a href="" class="btn btn-org">fruits</a>
-            </div>
-            <div class="col-md-4 org-pz">
-                <h2><span>Organic</span> Featured Products</h2>
-            </div>
-            <div class="col-md-4 inner-text">
-                <a href="" class="btn btn-org">juices</a>
-                <a href="" class="btn btn-org">bread</a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-md-4 inner-text">
+        <a href="" class="btn btn-org">vegetables</a>
+        <a href="" class="btn btn-org">fruits</a>
+      </div>
+      <div class="col-md-4 org-pz">
+        <h2><span>Organic</span> Featured Products</h2>
+      </div>
+      <div class="col-md-4 inner-text">
+        <a href="" class="btn btn-org">juices</a>
+        <a href="" class="btn btn-org">bread</a>
+      </div>
     </div>
+  </div>
 
-    <div class="container">
-        <div class="bk3-head" >
-            <div *ngFor="let product of products" class="item">
-                <a [routerLink]="['/products', product.id]">
-                    <div class="bk3-pz">
-                        <img src="{{product.img}}" class="img-responsive" alt="">
-                        <ul class="ul-star">
+  <div class="container">
+    <div class="bk3-head">
+      <div *ngFor="let product of products" class="item">
+        <a [routerLink]="['/products', product.id]">
+          <div class="bk3-pz">
+            <img src="{{ product.img }}" class="img-responsive" alt="" />
+            <!-- <ul class="ul-star">
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
                             <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <h2>{{product.name}}</h2>
-                        <p>&#8358;{{product.price}}</p>
-                    </div>
-                </a>
-                </div>
-        </div>
+                        </ul> -->
+            <h2 class="pt-3">{{ product.name }}</h2>
+            <p>&#8358;{{ product.price }}</p>
+            <div class="text-center pb-3">
+              <button class="btn btn-success" (click)="share()">Buy Now</button>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- organic products ends here -->
 
 <!-- block 2 starts here -->
 <section>
-    <div class="container-fluid">
-        <div class="row pt-2">
-            <div class="col-md-6 bk2-main">
-                <img src="assets/img/Capture.PNG" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-6 bk-farm">
-                <img src="assets/img/agronomy.png" class="img-responsive" alt="">
-                <h2>Happy Farmers</h2>
-                <p>From Muhammad Isa in Patigi who can now afford to send his children to school to Patience in Akwa-Ibom who is funding her university education with the additional income from her farm, our goal is to keep impacting on the lives of rural
-                    farmers.
-                </p>
-                <a href="" class="btn btn-works">HOW IT WORKS</a>
-            </div>
-        </div>
+  <div class="container-fluid">
+    <div class="row pt-2">
+      <div class="col-md-6 bk2-main">
+        <img src="assets/img/Capture.PNG" class="img-responsive" alt="" />
+      </div>
+      <div class="col-md-6 bk-farm">
+        <img src="assets/img/agronomy.png" class="img-responsive" alt="" />
+        <h2>Happy Farmers</h2>
+        <p>
+          From Muhammad Isa in Patigi who can now afford to send his children to
+          school to Patience in Akwa-Ibom who is funding her university
+          education with the additional income from her farm, our goal is to
+          keep impacting on the lives of rural farmers.
+        </p>
+        <a href="" class="btn btn-works">HOW IT WORKS</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- block 2 ends here -->
 
 <!-- block 3 starts here  -->
 <section class="bg-grey">
-    <div class="container">
-        <div class="row bk2-top">
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Organic new arrivals</h2>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="ul-right mr-auto">
-                            <li>
-                                <a href="">
-                                    <i class="fa fa-less-than"></i>
-                                    <!-- <img src="assets/img/is-less-than.png" alt=""> -->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa fa-greater-than"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Organic bestseller</h2>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="ul-right mr-auto">
-                            <li>
-                                <a href="">
-                                    <img src="assets/img/is-less-than.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="assets/img/is-greater-than.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Organic most viewed</h2>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="ul-right mr-auto">
-                            <li>
-                                <a href="">
-                                    <img src="assets/img/is-less-than.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="assets/img/is-greater-than.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row bk2-top">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Organic new arrivals</h2>
+          </div>
+          <div class="col-md-5">
+            <ul class="ul-right mr-auto">
+              <li>
+                <a href="">
+                  <i class="fa fa-less-than"></i>
+                  <!-- <img src="assets/img/is-less-than.png" alt=""> -->
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa fa-greater-than"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row pad-bk3 pad-top">
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/1.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/2.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/3.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Organic bestseller</h2>
+          </div>
+          <div class="col-md-5">
+            <ul class="ul-right mr-auto">
+              <li>
+                <a href="">
+                  <img src="assets/img/is-less-than.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="assets/img/is-greater-than.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row pad-bk3">
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/4.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/5.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/6.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Organic most viewed</h2>
+          </div>
+          <div class="col-md-5">
+            <ul class="ul-right mr-auto">
+              <li>
+                <a href="">
+                  <img src="assets/img/is-less-than.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="assets/img/is-greater-than.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row pad-bk3">
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/7.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/8.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/17.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row pad-bk3">
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/10.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="img/products/11.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="bk3-sub">
-                    <div class="row">
-                        <div class="col-md-5 sub-pz">
-                            <img src="assets/img/products/12.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 sub-text">
-                            <ul class="ul-sub">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <h2>Radiant Tee</h2>
-                            <p>&#8358;4,600</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row pad-bk3 pad-top">
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/1.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/2.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/3.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pad-bk3">
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/4.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/5.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/6.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pad-bk3">
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/7.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/8.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/17.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pad-bk3">
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/10.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="img/products/11.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bk3-sub">
+          <div class="row">
+            <div class="col-md-5 sub-pz">
+              <img src="assets/img/products/12.jpg" alt="" />
+            </div>
+            <div class="col-md-7 sub-text">
+              <ul class="ul-sub">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h2>Radiant Tee</h2>
+              <p>&#8358;4,600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- block 3 ends here -->
 
 <!-- block 4 starts here -->
 <section class="bk-trans">
-    <div class="container bk-green">
-        <div class="row px-sub">
-            <div class="col-md-5 bk-new">
-                <h2>Subscribe to our newsletter</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore</p>
-            </div>
-            <div class="col-md-4 bk-new">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-            </div>
-            <div class="col-md-3 bk-new new-btn">
-                <a href="" class="btn btn-submit">Submit</a>
-            </div>
+  <div class="container bk-green">
+    <div class="row px-sub">
+      <div class="col-md-5 bk-new">
+        <h2>Subscribe to our newsletter</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod
+          tempor incididunt labore dolore
+        </p>
+      </div>
+      <div class="col-md-4 bk-new">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
         </div>
+      </div>
+      <div class="col-md-3 bk-new new-btn">
+        <a href="" class="btn btn-submit">Submit</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- block 4 ends here -->
