@@ -1,114 +1,141 @@
 <section class="bk-white">
-    <div class="container pt-5 pb-5">
-        <div class="row mb-2 top-text">
-            <div class="col-md-2 text-center">
-                <span>ITEMS</span>
-            </div>
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-2 text-center">
-                <span>QUANTITY</span>
-            </div>
-            <div class="col-md-2 text-center">
-                <span>UNIT PRICE</span>
-            </div>
-            <div class="col-md-2 text-center">
-                <span>SUB-TOTAL</span>
-            </div>
-        </div>
-        <div class="row bk-cart pt-3 pb-1 mb-4">
-            <div class="col-md-2 text-center">
-                <img src="assets/img/products/2.jpg" class="img-responsive img-thumbnail" alt="">
-            </div>
-            <div class="col-md-4">
-                <ul class="vc-x2">
-                    <li class="m1">Seller: CK Venture</li>
-                    <li class="m2">Fresh Banana</li>
-                </ul>
-                <ul class="vc-x1">
-                    <li>Moved to saved Item</li>
-                    <li>
-                        <i class="fa fa-trash pr-1"></i> Remove
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2 text-center pt-3 vc-x3">
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-            </div>
-            <div class="col-md-2 text-center pt-3">
-                <span>&#8358;30,400</span>
-            </div>
-            <div class="col-md-2 text-center pt-3">
-                <span>&#8358;30,400</span>
-            </div>
-        </div>
-        <div class="row bk-cart pt-3 pb-1 mb04">
-            <div class="col-md-2 text-center">
-                <img src="assets/img/products/3.jpg" class="img-responsive img-thumbnail" alt="">
-            </div>
-            <div class="col-md-4">
-                <ul class="vc-x2">
-                    <li class="m1">Seller: CK Venture</li>
-                    <li class="m2">Fresh Tomato</li>
-                </ul>
-                <ul class="vc-x1">
-                    <li>Moved to saved Item</li>
-                    <li>
-                        <i class="fa fa-trash pr-1"></i> Remove
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2 text-center pt-3 vc-x3">
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-            </div>
-            <div class="col-md-2 text-center pt-3">
-                <span>&#8358;60,400</span>
-            </div>
-            <div class="col-md-2 text-center pt-3">
-                <span>&#8358;80,400</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-right mt-4 vc-x4">
-                    <a href="/market-place" class="btn btn-primary mr-4 cont-shop">CONTINUE SHOPPING</a>
-                    <a href="" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary pay">PROCEED TO CHECKOUT</a>
-                </div>
-            </div>
-        </div>
-        <!-- Modal box starts here -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Hello, Mr Andrew</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Do you want to purchase or store your product.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="/payment-details" type="button" class="btn btn-secondary">Purchase Now</a>
-                        <a href="" type="button" class="btn btn-primary">Store</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal box ends here -->
+  <div class="container pt-5 pb-5">
+    <div class="row mb-2 top-text">
+      <div class="col-md-2 text-center">
+        <span>ITEMS</span>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-2 text-center">
+        <span>QUANTITY</span>
+      </div>
+      <div class="col-md-2 text-center">
+        <span>UNIT PRICE</span>
+      </div>
+      <div class="col-md-2 text-center">
+        <span>SUB-TOTAL</span>
+      </div>
     </div>
+    <div
+      class="row bk-cart pt-3 pb-1 mb-4 cart-item"
+      *ngFor="let item of items"
+    >
+      <div class="col-md-2 text-center">
+        <img
+          src="assets/img/products/2.jpg"
+          class="img-responsive img-thumbnail"
+          alt=""
+        />
+      </div>
+      <div class="col-md-4">
+        <ul class="vc-x2">
+          <li class="m1">Seller: CK Venture</li>
+          <li class="m2">{{ item.name }}</li>
+        </ul>
+        <ul class="vc-x1">
+          <li>Moved to saved Item</li>
+          <li><i class="fa fa-trash pr-1"></i> Remove</li>
+        </ul>
+      </div>
+      <div class="col-md-2 text-center pt-3 vc-x3">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="col-md-2 text-center pt-3">
+        <span>&#8358;{{ item.price }}</span>
+      </div>
+      <div class="col-md-2 text-center pt-3">
+        <span>&#8358;30,400</span>
+      </div>
+    </div>
+    <!-- <div class="row bk-cart pt-3 pb-1 mb04">
+      <div class="col-md-2 text-center">
+        <img
+          src="assets/img/products/3.jpg"
+          class="img-responsive img-thumbnail"
+          alt=""
+        />
+      </div>
+      <div class="col-md-4">
+        <ul class="vc-x2">
+          <li class="m1">Seller: CK Venture</li>
+          <li class="m2">Fresh Tomato</li>
+        </ul>
+        <ul class="vc-x1">
+          <li>Moved to saved Item</li>
+          <li><i class="fa fa-trash pr-1"></i> Remove</li>
+        </ul>
+      </div>
+      <div class="col-md-2 text-center pt-3 vc-x3">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="col-md-2 text-center pt-3">
+        <span>&#8358;60,400</span>
+      </div>
+      <div class="col-md-2 text-center pt-3">
+        <span>&#8358;80,400</span>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-right mt-4 vc-x4">
+          <a href="/market-place" class="btn btn-primary mr-4 cont-shop"
+            >CONTINUE SHOPPING</a
+          >
+          <a
+            href=""
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="btn btn-primary pay"
+            >PROCEED TO CHECKOUT</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Modal box starts here -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hello, Mr Andrew</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Do you want to purchase or store your product.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="/payment-details" type="button" class="btn btn-secondary"
+              >Purchase Now</a
+            >
+            <a href="" type="button" class="btn btn-primary">Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal box ends here -->
+  </div>
 </section>

@@ -31,7 +31,7 @@ const routes: Routes = [
   },
   { path: "dashboard", component: DashboardComponent },
   { path: "payment", component: PaymentPageComponent },
-  { path: "viewcart", component: ViewCartComponent },
+  { path: "cart", component: ViewCartComponent },
   { path: "payment-details", component: PaymentDetailsComponent },
   { path: "purchase-history", component: PurchaseHistoryComponent },
   { path: "sales-history", component: SalesHistoryComponent },
